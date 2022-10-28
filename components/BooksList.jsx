@@ -46,7 +46,7 @@ const BooksList = () => {
 
       <Grid container spacing={2}>
         {allBooksList.map((book, index) => (
-          <Grid item xs={12} sm={6} md={4}>
+          <Grid key={index} item xs={12} sm={6} md={4}>
             <BookCard key={index} book={book} />
           </Grid>
         ))}
